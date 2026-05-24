@@ -93,6 +93,14 @@ git push origin main
 ```
 
 ---
+## Autor
+
+**Lucas da Silva de Moura**  
+Estudante de Análise e Desenvolvimento de Sistemas
+
+---
+
+**Última atualização:** 24 de Maio de 2026
 
 ## Tecnologias
 
