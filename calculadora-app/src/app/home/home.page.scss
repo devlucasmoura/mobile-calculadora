@@ -1,0 +1,38 @@
+.visor {
+  background: #1a1a2e;
+  border-radius: 12px;
+  padding: 20px 16px;
+  margin-bottom: 16px;
+  text-align: right;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.visor-texto {
+  color: #e0e0e0;
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  word-break: break-all;
+}
+
+/* Grade de botões: 4 colunas */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Botão que ocupa 2 colunas */
+.btn-larg {
+  grid-column: span 2;
+}
+
+ion-button {
+  height: 64px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  --border-radius: 12px;
+}

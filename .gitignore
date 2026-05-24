@@ -1,0 +1,14 @@
+# Dependências
+calculadora-app/node_modules/
+
+# Build
+calculadora-app/www/
+calculadora-app/dist/
+
+# Android/iOS nativo (gerado pelo Capacitor)
+calculadora-app/android/
+calculadora-app/ios/
+
+# Cache e temporários
+.DS_Store
+*.log
