@@ -12,3 +12,6 @@ calculadora-app/ios/
 # Cache e temporários
 .DS_Store
 *.log
+
+# Claude Code
+.claude/
