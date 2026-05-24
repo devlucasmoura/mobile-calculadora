@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +15,7 @@ export class HomePage {
   private operacao: string | null = null;
   private aguardandoNovo: boolean = false;
 
-  constructor(private router: Router) {}
+  constructor() {}
 
   // Chamado quando o usuário pressiona um dígito (0–9) ou o ponto decimal
   pressionarNumero(valor: string) {
@@ -82,8 +81,4 @@ export class HomePage {
     this.visor = this.visor.length > 1 ? this.visor.slice(0, -1) : '0';
   }
 
-  // Navega para a página do Conversor de Temperatura
-  irParaConversor() {
-    this.router.navigate(['/conversor']);
-  }
 }
