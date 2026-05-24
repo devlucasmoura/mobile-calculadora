@@ -6,14 +6,11 @@
 
 ## Sobre o Aplicativo
 
-O **calculadora-app** é um miniaplicativo mobile com duas funcionalidades:
+O **calculadora-app** é um miniaplicativo mobile com a seguinte funcionalidade:
 
 | Tela | Descrição |
 |------|-----------|
 | **Calculadora** | Operações matemáticas básicas: soma, subtração, multiplicação e divisão |
-| **Conversor de Temperatura** | Converte entre Celsius, Fahrenheit e Kelvin em tempo real |
-
-A navegação entre as duas telas demonstra o sistema de rotas do Angular integrado ao Ionic.
 
 ---
 
@@ -33,8 +30,8 @@ Antes de executar o projeto, certifique-se de ter instalado:
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/SEU_USUARIO/Projeto-Extensao.git
-cd Projeto-Extensao/calculadora-app
+git clone https://github.com/devlucasmoura/mobile-calculadora.git
+cd mobile-calculadora/calculadora-app
 
 # 2. Instale as dependências
 npm install
@@ -57,10 +54,6 @@ calculadora-app/
 │       │   ├── home.page.ts       # Lógica (TypeScript)
 │       │   ├── home.page.html     # Interface (HTML + componentes Ionic)
 │       │   └── home.page.scss     # Estilos
-│       ├── conversor/             # Página do Conversor de Temperatura
-│       │   ├── conversor.page.ts
-│       │   ├── conversor.page.html
-│       │   └── conversor.page.scss
 │       └── app-routing.module.ts  # Definição das rotas
 └── capacitor.config.ts            # Configuração para build nativo (Android/iOS)
 ```
@@ -69,10 +62,9 @@ calculadora-app/
 
 ## Conceitos Demonstrados
 
-- **Componentes Ionic:** `IonButton`, `IonInput`, `IonSegment`, `IonHeader`, `IonToolbar`
-- **Data Binding Angular:** interpolação `{{ }}`, two-way binding `[(ngModel)]`, event binding `(click)`
-- **Roteamento:** navegação entre páginas com `Router.navigate()`
-- **TypeScript:** tipos customizados (`type Unidade`), métodos privados, lógica de estado
+- **Componentes Ionic:** `IonButton`, `IonHeader`, `IonToolbar`
+- **Data Binding Angular:** interpolação `{{ }}`, event binding `(click)`
+- **TypeScript:** métodos privados, lógica de estado
 
 ---
 
@@ -84,12 +76,12 @@ Consulte o guia completo em [`docs/guia-tutorial.md`](docs/guia-tutorial.md).
 
 ## Versionamento
 
-Este projeto utiliza **Git** com fluxo de trabalho básico:
+Este projeto utiliza **Git** com commits convencionais:
 
 ```bash
 git add .
-git commit -m "descrição clara do que foi feito"
-git push origin main
+git commit -m "tipo: descricao clara do que foi feito"
+git push origin master
 ```
 
 ---
